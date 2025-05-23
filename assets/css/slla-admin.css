@@ -1,0 +1,133 @@
+/* General Layout */
+.slla-dashboard-wrap {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+.slla-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Submenu Tabs */
+.slla-submenu .nav-tab {
+    border-bottom: 2px solid transparent;
+    color: #0073aa;
+    padding: 10px 15px;
+    margin-right: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.slla-submenu .nav-tab:hover {
+    color: #005177;
+}
+
+.slla-submenu .nav-tab-active {
+    border-bottom-color: #0073aa;
+    color: #0073aa;
+    background: #fff;
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+button,
+input[type="submit"] {
+    background-color: #0073aa;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #005177;
+}
+
+/* Tables */
+table.slla-premium-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.slla-premium-table th,
+table.slla-premium-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table.slla-premium-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.slla-checkmark {
+    color: green;
+    font-weight: bold;
+}
+
+.slla-crossmark {
+    color: red;
+    font-weight: bold;
+}
+
+/* Premium Highlights */
+.slla-premium-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.slla-premium-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.slla-premium-card .dashicons {
+    font-size: 36px;
+    color: #0073aa;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .slla-premium-highlights {
+        grid-template-columns: 1fr;
+    }
+}
